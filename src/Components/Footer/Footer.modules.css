@@ -1,0 +1,11 @@
+.top {
+    background-color: #2C3E50;
+}
+
+.bottom {
+    background-color: #0B1015;
+}
+
+.top .container .section {
+    width: 33.3333333%;
+}
