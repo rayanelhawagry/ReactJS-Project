@@ -7,7 +7,7 @@ export default function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg">
                 <div className="container p-4">
-                    <NavLink className="navbar-brand text-light text-capitalize" to="home">Start Framework</NavLink>
+                    <NavLink className="navbar-brand text-light text-capitalize" to="">Start Framework</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>

@@ -12,8 +12,8 @@ import Contact from './Components/Contact/Contact'
 function App() {
   let router = createBrowserRouter([
     {
-      path: '', element: <Layout />, children: [
-        { path: 'home', element: <Home /> },
+      path: '/', element: <Layout />, children: [
+        { index: true, element: <Home /> },
         { path: 'about', element: <About /> },
         { path: 'portfolio', element: <Portfolio /> },
         { path: 'contact', element: <Contact /> }
