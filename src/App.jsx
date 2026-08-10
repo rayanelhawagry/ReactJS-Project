@@ -2,14 +2,28 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './Components/Layout/Layout'
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Portfolio from './Components/Portfolio/Portfolio';
+import Contact from './Components/Contact/Contact'
 
 function App() {
+  let router = createBrowserRouter([
+    {
+      path: '', element: <Layout />, children: [
+        { path: 'home', element: <Home /> },
+        { path: 'about', element: <About /> },
+        { path: 'portfolio', element: <Portfolio /> },
+        { path: 'contact', element: <Contact /> }
+      ]
+    }
+  ])
 
   return (
     <>
-      <Navbar />
-      <h1>PAGES</h1>
-      <Footer />
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
 }
