@@ -36,6 +36,10 @@ select {
 
 .nav-link {
     color: #F8F9FA;
+
+    &:hover {
+        color: #1ABC9C;
+    }
 }
 
 .navbar-nav .nav-link.active,
