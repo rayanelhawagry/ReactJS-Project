@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 export default function Navbar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg position-sticky top-0 start-0 end-0">
                 <div className="container pt-3 pb-3 d-flex justify-content-between">
                     <div>
                         <NavLink className="navbar-brand text-light fs-2 fw-bolder text-uppercase" to={''}>Start Framework</NavLink>
