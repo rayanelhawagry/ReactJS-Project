@@ -15,7 +15,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="form mt-5 w-own">
+                    <div className="form mt-5 w-form-own">
                         <div className='container d-flex justify-content-center align-items-center'>
                             <form className='w-100'>
                                 <div className="mb-3">

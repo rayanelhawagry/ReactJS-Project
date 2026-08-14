@@ -17,13 +17,13 @@
 
 
 @media all and (width < 768px) {
-    .w-own {
+    .w-form-own {
         width: 75%;
     }
 }
 
 @media all and (width > 768px) {
-    .w-own {
+    .w-form-own {
         width: 50%;
     }
 }

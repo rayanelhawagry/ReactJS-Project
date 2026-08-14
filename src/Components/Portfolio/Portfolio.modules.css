@@ -19,10 +19,6 @@ img {
     width: 100%;
 }
 
-.w-own {
-    width: 33.3333333%;
-}
-
 .p-24 {
     padding-inline: 1.5rem;
 }
@@ -49,12 +45,6 @@ img {
 }
 
 
-@media all and (width < 992px) {
-    .w-own {
-        width: 50%;
-    }
-}
-
 @media all and (width < 768px) {
     .title h2 {
         font-size: 30px;
@@ -62,5 +52,17 @@ img {
 
     .w-own {
         width: 100%;
+    }
+}
+
+@media all and (768px <=width < 992px) {
+    .w-own {
+        width: 50%;
+    }
+}
+
+@media all and (width >=992px) {
+    .w-own {
+        width: 33.3333333%;
     }
 }
