@@ -1,0 +1,66 @@
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title h2,
+.title .star {
+    color: #2c3e50;
+}
+
+.title .line {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+}
+
+.details .container {
+    width: 100%;
+}
+
+.w-own {
+    width: 33.3333333%;
+}
+
+.p-24 {
+    padding-inline: 1.5rem;
+}
+
+.mb-48 {
+    margin-bottom: 3rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.layout {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.inner-card:hover .layout {
+    opacity: 1;
+}
+
+.bg-layout {
+    background-color: #1abc9ce5;
+}
+
+
+@media all and (width < 992px) {
+    .w-own {
+        width: 50%;
+    }
+}
+
+@media all and (width < 768px) {
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .w-own {
+        width: 100%;
+    }
+}

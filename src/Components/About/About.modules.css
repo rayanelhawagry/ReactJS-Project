@@ -6,3 +6,9 @@
 .details .container {
     width: 85%;
 }
+
+.about .content .title .starLine .line {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: white;
+}
