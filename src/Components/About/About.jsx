@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../About/About.modules.css'
 
-export default function About() {
+export default function About({ currentTitle, setCurrentTitle }) {
+    useEffect(() => {
+        setCurrentTitle('About')
+    }, [])
+
+
     return (
         <>
             <div className="about d-flex justify-content-center align-items-center">

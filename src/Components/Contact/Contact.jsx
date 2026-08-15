@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Contact/Contact.modules.css'
 
-export default function Contact() {
+export default function Contact({ currentTitle, setCurrentTitle }) {
+    useEffect(() => {
+        setCurrentTitle('Contact')
+    })
+
+
     return (
         <>
             <div className="contact d-flex justify-content-center align-items-start">

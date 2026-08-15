@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Portfolio/Portfolio.modules.css'
 import picOne from '../../assets/pic1.png'
 import picTwo from '../../assets/pic2.png'
 import picThree from '../../assets/pic3.png'
 
-export default function Portfolio() {
+export default function Portfolio({ currentTitle, setCurrentTitle }) {
+    useEffect(() => {
+        setCurrentTitle('Portfolio')
+    }, [])
+
+
     return (
         <>
             <div className="portfolio d-flex justify-content-center align-items-start">

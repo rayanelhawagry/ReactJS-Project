@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import avatar from '../../assets/avatar.svg'
 import '../Home/Home.modules.css'
 
-export default function Home() {
+export default function Home({ currentTitle, setCurrentTitle }) {
+    useEffect(() => {
+        setCurrentTitle('Home')
+    }, [])
+
+
     return (
         <>
             <div className='home d-flex justify-content-center align-items-center'>
@@ -16,7 +21,7 @@ export default function Home() {
                         <i className='fa-solid fa-star text-light'></i>
                         <div className="line ms-3"></div>
                     </div>
-                        <p className='text-light'>Graphic Artist - Web Designer - Illustrator</p>
+                    <p className='text-light'>Graphic Artist - Web Designer - Illustrator</p>
                 </div>
             </div>
         </>
