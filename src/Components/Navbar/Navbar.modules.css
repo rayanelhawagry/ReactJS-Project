@@ -1,4 +1,12 @@
 nav {
     background-color: #2C3E50;
+    overflow: auto;
     z-index: 99999999;
+}
+
+
+@media all and (width < 992px) {
+    .nav-link {
+        margin-top: 1rem;
+    }
 }
