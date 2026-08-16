@@ -40,7 +40,7 @@ export default function Contact({ currentTitle, setCurrentTitle }) {
                                     <input type="password" className="form-control" id="exampleFormControlInput4" autoComplete='off' />
                                 </div>
                                 <div className="btn d-flex justify-content-center align-items-center">
-                                    <button type="button" className="btn btn-warning">Send Message</button>
+                                    <button type="button" class="btn btn-outline-success fw-medium">Send Message</button>
                                 </div>
                             </form>
                         </div>
