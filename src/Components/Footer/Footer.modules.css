@@ -1,3 +1,7 @@
+.p-40 {
+    padding: 2.5rem;
+}
+
 .top {
     background-color: #2C3E50;
 }
@@ -6,6 +10,26 @@
     background-color: #0B1015;
 }
 
-.top .container .section {
+.top .card-group .section {
     width: 33.3333333%;
+}
+
+.top .card-group .section .icons div i {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media all and (width < 992px) {
+    .top .card-group {
+        flex-direction: column;
+    }
+
+    .top .card-group .section {
+        width: 100%;
+    }
+
+    .top .card-group .section.around {
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
 }

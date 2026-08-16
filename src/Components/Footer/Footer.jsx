@@ -5,21 +5,29 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <div className="top overflow-auto">
-                    <div className="container d-flex justify-content-around text-center text-light mt-5 mb-5">
+                <div className="top overflow-auto p-40">
+                    <div className="card-group d-flex justify-content-between align-content-between text-center text-light m-4">
                         <div className='section'>
                             <h3>LOCATION</h3>
                             <p>2215 John Daniel Drive</p>
                             <p>Clark, MO 65243</p>
                         </div>
 
-                        <div className='section'>
+                        <div className='section around'>
                             <h3>AROUND THE WEB</h3>
-                            <div className="icons">
-                                <i className='fa-brands fa-facebook mx-1 icon'></i>
-                                <i className='fa-brands fa-twitter mx-1 icon'></i>
-                                <i className='fa-brands fa-linkedin-in mx-1 icon'></i>
-                                <i className='fa-solid fa-globe mx-1 icon'></i>
+                            <div className="icons mt-3">
+                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                    <i className='fa-brands fa-facebook mx-1 icon'></i>
+                                </div>
+                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                    <i className='fa-brands fa-twitter mx-1 icon'></i>
+                                </div>
+                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                    <i className='fa-brands fa-linkedin-in mx-1 icon'></i>
+                                </div>
+                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                    <i className='fa-solid fa-globe mx-1 icon'></i>
+                                </div>
                             </div>
                         </div>
 
