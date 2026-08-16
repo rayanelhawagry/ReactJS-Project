@@ -1,13 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Portfolio/Portfolio.modules.css'
 import picOne from '../../assets/pic1.png'
 import picTwo from '../../assets/pic2.png'
 import picThree from '../../assets/pic3.png'
 
 export default function Portfolio({ currentTitle, setCurrentTitle }) {
+    const [img, setImg] = useState('')
+
     useEffect(() => {
         setCurrentTitle('Portfolio')
     }, [])
+
+    function clickImg(img) {
+        console.log('Clicked! ', img);
+        setImg(img)
+        console.log(img);
+    }
 
 
     return (
@@ -26,7 +34,7 @@ export default function Portfolio({ currentTitle, setCurrentTitle }) {
                     <div className="details">
                         <div className="container d-flex flex-wrap justify-content-center align-items-center">
                             <div className="outer-card w-own p-24 mb-48">
-                                <div className="inner-card cursor-pointer position-relative">
+                                <div className="inner-card cursor-pointer position-relative" onClick={() => clickImg(picOne)}>
                                     <div className="layout rounded-3 position-absolute top-0 bottom-0 start-0 end-0 bg-layout d-flex justify-content-center align-items-center">
                                         <i className="fa-solid fa-plus fa-6x text-white"></i>
                                     </div>
@@ -34,7 +42,7 @@ export default function Portfolio({ currentTitle, setCurrentTitle }) {
                                 </div>
                             </div>
                             <div className="outer-card w-own p-24 mb-48">
-                                <div className="inner-card cursor-pointer position-relative">
+                                <div className="inner-card cursor-pointer position-relative" onClick={() => clickImg(picTwo)}>
                                     <div className="layout rounded-3 position-absolute top-0 bottom-0 start-0 end-0 bg-layout d-flex justify-content-center align-items-center">
                                         <i className="fa-solid fa-plus fa-6x text-white"></i>
                                     </div>
@@ -42,7 +50,7 @@ export default function Portfolio({ currentTitle, setCurrentTitle }) {
                                 </div>
                             </div>
                             <div className="outer-card w-own p-24 mb-48">
-                                <div className="inner-card cursor-pointer position-relative">
+                                <div className="inner-card cursor-pointer position-relative" onClick={() => clickImg(picThree)}>
                                     <div className="layout rounded-3 position-absolute top-0 bottom-0 start-0 end-0 bg-layout d-flex justify-content-center align-items-center">
                                         <i className="fa-solid fa-plus fa-6x text-white"></i>
                                     </div>
@@ -50,7 +58,7 @@ export default function Portfolio({ currentTitle, setCurrentTitle }) {
                                 </div>
                             </div>
                             <div className="outer-card w-own p-24 mb-48">
-                                <div className="inner-card cursor-pointer position-relative">
+                                <div className="inner-card cursor-pointer position-relative" onClick={() => clickImg(picOne)}>
                                     <div className="layout rounded-3 position-absolute top-0 bottom-0 start-0 end-0 bg-layout d-flex justify-content-center align-items-center">
                                         <i className="fa-solid fa-plus fa-6x text-white"></i>
                                     </div>
@@ -58,7 +66,7 @@ export default function Portfolio({ currentTitle, setCurrentTitle }) {
                                 </div>
                             </div>
                             <div className="outer-card w-own p-24 mb-48">
-                                <div className="inner-card cursor-pointer position-relative">
+                                <div className="inner-card cursor-pointer position-relative" onClick={() => clickImg(picTwo)}>
                                     <div className="layout rounded-3 position-absolute top-0 bottom-0 start-0 end-0 bg-layout d-flex justify-content-center align-items-center">
                                         <i className="fa-solid fa-plus fa-6x text-white"></i>
                                     </div>
@@ -66,7 +74,7 @@ export default function Portfolio({ currentTitle, setCurrentTitle }) {
                                 </div>
                             </div>
                             <div className="outer-card w-own p-24 mb-48">
-                                <div className="inner-card cursor-pointer position-relative">
+                                <div className="inner-card cursor-pointer position-relative" onClick={() => clickImg(picThree)}>
                                     <div className="layout rounded-3 position-absolute top-0 bottom-0 start-0 end-0 bg-layout d-flex justify-content-center align-items-center">
                                         <i className="fa-solid fa-plus fa-6x text-white"></i>
                                     </div>
