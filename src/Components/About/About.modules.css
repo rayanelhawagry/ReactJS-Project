@@ -1,9 +1,9 @@
 .about {
-    height: 85dvh;
+    height: 81dvh;
     background-color: #1ABC9C;
 }
 
-.details .container {
+.about .content .details .container {
     width: 85%;
 }
 
