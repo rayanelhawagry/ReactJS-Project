@@ -37,6 +37,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+
                 <div className="bottom p-3">
                     <p className='text-light text-center m-1'>Copyright © Rayan 2026</p>
                 </div>

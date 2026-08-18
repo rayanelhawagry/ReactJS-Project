@@ -6,10 +6,6 @@
     background-color: #2C3E50;
 }
 
-.bottom {
-    background-color: #1a252f;
-}
-
 .top .card-group .section {
     width: 33.3333333%;
 }
@@ -17,6 +13,10 @@
 .top .card-group .section .icons div i {
     width: 1rem;
     height: 1rem;
+}
+
+.bottom {
+    background-color: #1a252f;
 }
 
 @media all and (width < 992px) {

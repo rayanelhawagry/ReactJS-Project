@@ -3,15 +3,15 @@
     background-color: #1ABC9C;
 }
 
-.avatar {
+.home .content .avatar {
     width: 15.625rem;
 }
 
-.content h2 {
+.hom .content h2 {
     font-size: 40px;
 }
 
-.line {
+.home .content .starLine .line {
     width: 5rem;
     height: 0.25rem;
     background-color: white;
