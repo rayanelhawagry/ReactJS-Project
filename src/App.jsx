@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home';
@@ -14,7 +12,7 @@ import Main from './main'
 function App() {
   const [currentTitle, setCurrentTitle] = useState('')
 
-  let router = createBrowserRouter([
+  const router = createBrowserRouter([
     {
       path: '', element: <Layout />, children: [
         { index: true, element: <Home currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} /> },
@@ -29,8 +27,8 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
-      <Main currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} />
+      <RouterProvider router={router} />
+      <Main currentTitle={currentTitle} />
     </>
   )
 }

@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
 
 
 import React from 'react'
-export default function Main({ currentTitle, setCurrentTitle }) {
+export default function Main({ currentTitle }) {
   let title = document.getElementById('title')
   title.textContent = currentTitle;
 }
