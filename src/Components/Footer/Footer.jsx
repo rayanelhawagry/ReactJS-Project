@@ -15,17 +15,17 @@ export default function Footer() {
 
                         <div className='section around'>
                             <h3>AROUND THE WEB</h3>
-                            <div className="icons mt-3">
-                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                            <div className="icons mt-3 d-flex justify-content-center gap-2">
+                                <div className='border rounded-circle p-2'>
                                     <i className='fa-brands fa-facebook mx-1 icon'></i>
                                 </div>
-                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                <div className='border rounded-circle p-2'>
                                     <i className='fa-brands fa-twitter mx-1 icon'></i>
                                 </div>
-                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                <div className='border rounded-circle p-2'>
                                     <i className='fa-brands fa-linkedin-in mx-1 icon'></i>
                                 </div>
-                                <div className='me-1 border border-light rounded-circle p-2 me-2 d-inline'>
+                                <div className='border rounded-circle p-2'>
                                     <i className='fa-solid fa-globe mx-1 icon'></i>
                                 </div>
                             </div>
