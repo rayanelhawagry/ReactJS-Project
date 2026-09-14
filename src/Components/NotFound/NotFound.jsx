@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../NotFound/NotFound.modules.css'
 
-export default function NotFound() {
+export default function NotFound({ setCurrentTitle }) {
+    useEffect(() => {
+        setCurrentTitle('404 Error!')
+    }, [])
+
+
     return (
         <>
             <div className="notFound d-flex flex-column justify-content-center align-items-center">

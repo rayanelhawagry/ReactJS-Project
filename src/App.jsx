@@ -15,11 +15,11 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '', element: <Layout />, children: [
-        { index: true, element: <Home currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} /> },
-        { path: 'about', element: <About currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} /> },
-        { path: 'portfolio', element: <Portfolio currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} /> },
-        { path: 'contact', element: <Contact currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} /> },
-        { path: '*', element: <NotFound currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} /> }
+        { index: true, element: <Home setCurrentTitle={setCurrentTitle} /> },
+        { path: 'about', element: <About setCurrentTitle={setCurrentTitle} /> },
+        { path: 'portfolio', element: <Portfolio setCurrentTitle={setCurrentTitle} /> },
+        { path: 'contact', element: <Contact setCurrentTitle={setCurrentTitle} /> },
+        { path: '*', element: <NotFound setCurrentTitle={setCurrentTitle} /> }
       ]
     }
   ])
