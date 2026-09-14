@@ -14,16 +14,22 @@
 }
 
 .layout {
+    background-color: #1abc9ce5;
     opacity: 0;
     transition: all 0.5s;
 }
 
-.inner-card:hover .layout {
+.card:hover .layout {
     opacity: 1;
 }
 
-.bg-layout {
-    background-color: #1abc9ce5;
+.selectedImgLayout {
+    background-color: #0d6efd4d;
+    z-index: 9999999999999999999999999;
+}
+
+.selectedImgLayout img {
+    width: 37.5rem;
 }
 
 
