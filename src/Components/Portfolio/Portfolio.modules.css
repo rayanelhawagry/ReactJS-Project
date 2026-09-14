@@ -1,22 +1,8 @@
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.p-24 {
-    padding-inline: 1.5rem;
-}
-
-.mb-48 {
-    margin-bottom: 3rem;
-}
-
 .cursor-pointer {
     cursor: pointer;
 }
 
-.title h2,
+.title h1,
 .title .starLine .star {
     color: #2c3e50;
 }
@@ -29,7 +15,7 @@ img {
 
 .layout {
     opacity: 0;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .inner-card:hover .layout {
@@ -42,8 +28,8 @@ img {
 
 
 @media all and (width < 768px) {
-    .title h2 {
-        font-size: 30px;
+    .title h1 {
+        font-size: 1.875rem;
     }
 
     .w-own {
@@ -53,12 +39,12 @@ img {
 
 @media all and (768px <=width < 992px) {
     .w-own {
-        width: 50%;
+        width: 46%;
     }
 }
 
 @media all and (width >=992px) {
     .w-own {
-        width: 33.3333333%;
+        width: 29%;
     }
 }
