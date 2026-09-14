@@ -22,7 +22,7 @@ function App() {
         { path: '*', element: <NotFound setCurrentTitle={setCurrentTitle} /> }
       ]
     }
-  ])
+  ], { basename: '/ReactJS-Project' })
 
 
   return (
