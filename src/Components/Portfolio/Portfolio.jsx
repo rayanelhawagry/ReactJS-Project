@@ -18,7 +18,7 @@ export default function Portfolio({ setCurrentTitle }) {
             <div className="portfolio d-flex justify-content-center align-items-start">
                 <div className="content d-flex flex-column justify-content-center align-items-center mb-5">
                     <div className="title">
-                        <h1 className='text-uppercase fw-bolder mt-4 mb-4'>portfolio component</h1>
+                        <h1 className='text-uppercase fw-bolder my-4'>portfolio component</h1>
                         <div className="starLine d-flex justify-content-center align-items-center gap-3 mb-3">
                             <div className="line"></div>
                             <i className='star fa-solid fa-star'></i>

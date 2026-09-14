@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import '../Contact/Contact.modules.css'
 
-export default function Contact({ currentTitle, setCurrentTitle }) {
+export default function Contact({ setCurrentTitle }) {
     useEffect(() => {
         setCurrentTitle('Contact')
     })
@@ -12,11 +12,11 @@ export default function Contact({ currentTitle, setCurrentTitle }) {
             <div className="contact d-flex justify-content-center align-items-start">
                 <div className="content d-flex flex-column justify-content-center align-items-center mb-5 w-100">
                     <div className="title">
-                        <h2 className="text-uppercase fw-bolder mt-4 mb-4 text-center">contact component</h2>
-                        <div className="starLine d-flex justify-content-center align-items-center mb-3">
-                            <div className="line me-3" />
+                        <h1 className="text-uppercase fw-bolder my-4">contact component</h1>
+                        <div className="starLine d-flex justify-content-center align-items-center gap-3 mb-3">
+                            <div className="line" />
                             <i className="star fa-solid fa-star" />
-                            <div className="line ms-3" />
+                            <div className="line" />
                         </div>
                     </div>
                     <div className="form mt-5 w-form-own">
